@@ -7,6 +7,7 @@ android {
     defaultConfig {
         applicationId "teaonly.droideye"
         targetSdkVersion 14
+        minSdkVersion="14"
 
         ndk {
             moduleName "libx264_pre"
@@ -22,5 +23,5 @@ android {
 }
 
 dependencies {
-    compile files('libs/java_websocket.jar')
+    implementation files('libs/java_websocket.jar')
 }

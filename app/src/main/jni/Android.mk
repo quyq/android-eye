@@ -23,12 +23,8 @@ LOCAL_SRC_FILES := main_jni.cpp \
                    g72x/g711.c \
                    g72x/g72x.c 
                     
-LOCAL_LDLIBS += -llog -lz
-LOCAL_SHARED_LIBRARIES := libcutils\
-                          libgnustl\
-                          libdl
-
-LOCAL_STATIC_LIBRARIES := libx264_pre
+LOCAL_LDLIBS += -llog -lz -ldl
+LOCAL_SHARED_LIBRARIES := libx264_pre
 
 include $(BUILD_SHARED_LIBRARY)
 
