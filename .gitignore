@@ -14,6 +14,7 @@ app/src/main/jni/x264/
 # generated files
 app/src/main/libs/
 app/src/main/obj/
+app/.cxx/
 
 # Local configuration file (sdk path, etc)
 local.properties
